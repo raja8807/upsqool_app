@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>upsQool Insights</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-container": "#00443f",
+                        "surface-container-highest": "#e1e3e4",
+                        "surface-container-high": "#e7e8e9",
+                        "primary-fixed": "#6ff9d6",
+                        "surface-variant": "#e1e3e4",
+                        "error-container": "#ffdad6",
+                        "on-surface-variant": "#3c4a45",
+                        "on-background": "#191c1d",
+                        "background": "#f8f9fa",
+                        "on-secondary-fixed": "#331200",
+                        "on-primary-fixed-variant": "#005141",
+                        "secondary-container": "#fc8a40",
+                        "outline": "#6c7a75",
+                        "on-tertiary-fixed-variant": "#00504a",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-dim": "#d9dadb",
+                        "secondary": "#9b4500",
+                        "inverse-on-surface": "#f0f1f2",
+                        "secondary-fixed": "#ffdbc9",
+                        "on-surface": "#191c1d",
+                        "surface-tint": "#006b58",
+                        "primary-fixed-dim": "#4eddbb",
+                        "primary-container": "#1abc9c",
+                        "error": "#ba1a1a",
+                        "surface-bright": "#f8f9fa",
+                        "on-error": "#ffffff",
+                        "inverse-surface": "#2e3132",
+                        "on-primary-container": "#004538",
+                        "on-secondary-fixed-variant": "#763300",
+                        "on-secondary": "#ffffff",
+                        "on-tertiary-fixed": "#00201d",
+                        "tertiary": "#006a63",
+                        "inverse-primary": "#4eddbb",
+                        "surface-container-low": "#f3f4f5",
+                        "surface-container": "#edeeef",
+                        "outline-variant": "#bbcac3",
+                        "primary": "#006b58",
+                        "tertiary-fixed-dim": "#71d7cd",
+                        "secondary-fixed-dim": "#ffb68d",
+                        "on-tertiary": "#ffffff",
+                        "tertiary-container": "#4eb7ad",
+                        "on-primary": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "surface": "#f8f9fa",
+                        "on-secondary-container": "#672c00",
+                        "tertiary-fixed": "#8ef4e9",
+                        "on-primary-fixed": "#002019"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Plus Jakarta Sans"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f9fa;
+            color: #191c1d;
+        }
+        .editorial-shadow {
+            box-shadow: 0 8px 32px rgba(0,0,0,0.06);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-white/80 dark:bg-zinc-900/80 backdrop-blur-md shadow-[0_8px_32px_rgba(0,0,0,0.06)]">
+<div class="flex items-center justify-between px-6 py-4 w-full">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full overflow-hidden bg-surface-container-high border-2 border-primary-container">
+<img alt="Parent Profile" class="w-full h-full object-cover" data-alt="portrait of a smiling middle-aged woman with kind eyes and warm expression in soft natural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnQlA7OfwQSTPrIUDMmS1itsX4jc_VA7EfLIA-WTgY3r-2EcEEMAMiw5GO_EOxZbFgnQNeMOQeEm7hyNce2VoHwYetEMa6-ds1iCscnaRa9REjfCCJpFstT_1YRHCGSrmNfpFsSo40wTTeKd4gqcHPlAhbm31y02LgzaH393Enkh9vdPWtqG0MHksPhcgzO88gdqawMuMDKFTcC-kwCbkIQw65UHpfGOl-ek2W17_tYLyUS7y3_f9XXXSb07fScuU2SEOv_6yCZuc"/>
+</div>
+<span class="text-2xl font-extrabold text-[#006B58] dark:text-[#1ABC9C] font-headline tracking-tight">upsQool</span>
+</div>
+<div class="flex items-center gap-4">
+<button class="p-2 rounded-full hover:bg-[#1ABC9C]/10 transition-colors active:scale-95 duration-200">
+<span class="material-symbols-outlined text-zinc-500">notifications</span>
+</button>
+</div>
+</div>
+</header>
+<main class="pt-24 pb-32 px-6 max-w-lg mx-auto">
+<!-- Page Title -->
+<div class="mb-8">
+<h1 class="text-[1.75rem] font-bold font-headline text-on-surface tracking-tight leading-tight">Insights</h1>
+<p class="text-on-surface-variant font-body mt-1">Nurturing your child's multi-dimensional growth.</p>
+</div>
+<!-- Weekly Summary: Text Insight Card -->
+<section class="mb-8">
+<div class="bg-surface-container-lowest p-6 rounded-lg editorial-shadow relative overflow-hidden">
+<div class="absolute top-0 right-0 w-24 h-24 bg-primary-container/10 rounded-bl-full -mr-8 -mt-8"></div>
+<div class="flex flex-col gap-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+<span class="text-label-sm font-semibold text-primary uppercase tracking-widest text-[0.6875rem]">Weekly Insight</span>
+</div>
+<p class="text-lg font-headline font-semibold text-on-surface leading-snug">
+                        Your child enjoys creative activities the most this week 🎨
+                    </p>
+<div class="mt-2 flex items-end gap-1 h-8">
+<div class="w-2 bg-primary-container/20 rounded-full h-[40%]"></div>
+<div class="w-2 bg-primary-container/40 rounded-full h-[60%]"></div>
+<div class="w-2 bg-primary-container/60 rounded-full h-[55%]"></div>
+<div class="w-2 bg-primary-container/80 rounded-full h-[85%]"></div>
+<div class="w-2 bg-primary rounded-full h-[100%]"></div>
+<div class="ml-2 text-xs font-medium text-on-surface-variant">Trending +12%</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Q Distribution: Circular Chart -->
+<section class="mb-8">
+<h2 class="text-sm font-bold uppercase tracking-[0.15em] text-on-surface-variant mb-4 px-2">Q Distribution</h2>
+<div class="bg-surface-container-low p-8 rounded-lg flex flex-col items-center">
+<!-- SVG Circular Chart Placeholder -->
+<div class="relative w-48 h-48 flex items-center justify-center">
+<svg class="w-full h-full -rotate-90" viewbox="0 0 100 100">
+<circle cx="50" cy="50" fill="transparent" r="40" stroke="#edeeef" stroke-width="12"></circle>
+<!-- Intelligence (Teal) -->
+<circle cx="50" cy="50" fill="transparent" r="40" stroke="#006B58" stroke-dasharray="251.2" stroke-dashoffset="62.8" stroke-width="12"></circle>
+<!-- Physical (Orange) -->
+<circle class="opacity-80" cx="50" cy="50" fill="transparent" r="40" stroke="#FC8A40" stroke-dasharray="251.2" stroke-dashoffset="188.4" stroke-width="12"></circle>
+</svg>
+<div class="absolute flex flex-col items-center">
+<span class="text-[2.5rem] font-bold font-headline text-on-surface">86</span>
+<span class="text-[0.6875rem] font-medium text-on-surface-variant uppercase tracking-widest">Total Q</span>
+</div>
+</div>
+<!-- Legend Bento -->
+<div class="grid grid-cols-2 gap-x-8 gap-y-4 mt-8 w-full">
+<div class="flex items-center gap-2">
+<div class="w-2 h-2 rounded-full bg-primary"></div>
+<span class="text-xs font-medium text-on-surface-variant">Intelligence</span>
+</div>
+<div class="flex items-center gap-2">
+<div class="w-2 h-2 rounded-full bg-secondary-container"></div>
+<span class="text-xs font-medium text-on-surface-variant">Emotional</span>
+</div>
+<div class="flex items-center gap-2">
+<div class="w-2 h-2 rounded-full bg-tertiary-container"></div>
+<span class="text-xs font-medium text-on-surface-variant">Creative</span>
+</div>
+<div class="flex items-center gap-2">
+<div class="w-2 h-2 rounded-full bg-primary-fixed-dim"></div>
+<span class="text-xs font-medium text-on-surface-variant">Physical</span>
+</div>
+<div class="flex items-center gap-2">
+<div class="w-2 h-2 rounded-full bg-outline-variant"></div>
+<span class="text-xs font-medium text-on-surface-variant">Values</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Happiness Highlights -->
+<section class="mb-8">
+<h2 class="text-sm font-bold uppercase tracking-[0.15em] text-on-surface-variant mb-4 px-2">Happiness Highlights</h2>
+<div class="grid grid-cols-1 gap-4">
+<!-- Top Activities Card -->
+<div class="bg-surface-container-highest p-5 rounded-lg flex flex-col gap-4">
+<div class="flex justify-between items-center">
+<span class="text-sm font-semibold text-on-primary-container">Top Activities</span>
+<span class="material-symbols-outlined text-primary-container text-xl" style="font-variation-settings: 'FILL' 1;">trending_up</span>
+</div>
+<div class="flex flex-col gap-3">
+<div class="flex items-center justify-between p-3 bg-surface-container-lowest rounded-DEFAULT">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-tertiary-container/20 flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-lg">brush</span>
+</div>
+<span class="font-medium text-on-surface">Drawing</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="text-sm font-bold text-on-surface">4.8</span>
+<span class="material-symbols-outlined text-xs text-secondary" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+<div class="flex items-center justify-between p-3 bg-surface-container-lowest rounded-DEFAULT">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-primary-container/20 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-lg">sports_soccer</span>
+</div>
+<span class="font-medium text-on-surface">Football</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="text-sm font-bold text-on-surface">4.6</span>
+<span class="material-symbols-outlined text-xs text-secondary" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Needs Attention Card -->
+<div class="bg-surface-container-low p-5 rounded-lg border-l-4 border-secondary-container">
+<div class="flex justify-between items-start mb-4">
+<div class="flex flex-col">
+<span class="text-sm font-semibold text-secondary">Needs Attention</span>
+<p class="text-xs text-on-surface-variant mt-1">Suggested for encouragement</p>
+</div>
+<div class="w-10 h-10 rounded-full bg-secondary-container/10 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined">lightbulb</span>
+</div>
+</div>
+<div class="flex items-center justify-between p-3 bg-surface-container-lowest rounded-DEFAULT">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-secondary-container/20 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-lg">menu_book</span>
+</div>
+<span class="font-medium text-on-surface">Reading</span>
+</div>
+<div class="flex flex-col items-end">
+<span class="text-sm font-bold text-error">2.9</span>
+<span class="text-[10px] text-on-surface-variant uppercase font-medium">Low Engagement</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Premium Footer Image Tip -->
+<section class="mt-12">
+<div class="rounded-lg h-40 overflow-hidden relative">
+<img alt="Mindful Parenting" class="w-full h-full object-cover" data-alt="close-up of a child and parent's hands together planting a small green sprout in soft morning sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTa6uZ68sYCSypEogQEc5DSzCQteLciGe49ToF3fekQFA-p5tyJnVpcyrDUL_TORoXpNB-FzQ0hMmi6wFqyHZmcrEXtujwNZygevKVBm7xFoLg0DZk-qEXbHr_9lAOrofmnki5kfKb3IR_EIdfvrBS3p-B0Fb93wQQGsIKMl0Y1YFjGU6NVumnWDNBW9A93KBuJkE_HIVqgAkLkbk31cf6r7CGxvgCulMIXrQ35-KiHJKPtzNcCJtH2uh_HsHyqpC6CBQ6IGMY0As"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-6">
+<p class="text-white text-sm font-medium italic">"Small steps everyday create the strongest foundations."</p>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 bg-white/80 dark:bg-zinc-900/80 backdrop-blur-md shadow-[0_-8px_32px_rgba(0,0,0,0.06)] rounded-t-[24px]">
+<div class="flex justify-around items-center px-4 pb-6 pt-3">
+<!-- Home -->
+<a class="flex flex-col items-center justify-center text-zinc-500 dark:text-zinc-400 py-2 px-5 hover:text-[#1ABC9C] transition-all active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="font-['Inter'] text-[11px] font-medium uppercase tracking-wider mt-1">Home</span>
+</a>
+<!-- Calendar -->
+<a class="flex flex-col items-center justify-center text-zinc-500 dark:text-zinc-400 py-2 px-5 hover:text-[#1ABC9C] transition-all active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined">calendar_today</span>
+<span class="font-['Inter'] text-[11px] font-medium uppercase tracking-wider mt-1">Calendar</span>
+</a>
+<!-- Insights (Active) -->
+<a class="flex flex-col items-center justify-center bg-[#1ABC9C] dark:bg-[#006B58] text-white rounded-[20px] py-2 px-5 active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">analytics</span>
+<span class="font-['Inter'] text-[11px] font-medium uppercase tracking-wider mt-1">Insights</span>
+</a>
+<!-- Profile -->
+<a class="flex flex-col items-center justify-center text-zinc-500 dark:text-zinc-400 py-2 px-5 hover:text-[#1ABC9C] transition-all active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="font-['Inter'] text-[11px] font-medium uppercase tracking-wider mt-1">Profile</span>
+</a>
+</div>
+</nav>
+</body></html>

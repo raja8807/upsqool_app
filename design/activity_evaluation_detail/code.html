@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Activity Evaluation | upsQool</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-container": "#00443f",
+                        "surface-container-highest": "#e1e3e4",
+                        "surface-container-high": "#e7e8e9",
+                        "primary-fixed": "#6ff9d6",
+                        "surface-variant": "#e1e3e4",
+                        "error-container": "#ffdad6",
+                        "on-surface-variant": "#3c4a45",
+                        "on-background": "#191c1d",
+                        "background": "#f8f9fa",
+                        "on-secondary-fixed": "#331200",
+                        "on-primary-fixed-variant": "#005141",
+                        "secondary-container": "#fc8a40",
+                        "outline": "#6c7a75",
+                        "on-tertiary-fixed-variant": "#00504a",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-dim": "#d9dadb",
+                        "secondary": "#9b4500",
+                        "inverse-on-surface": "#f0f1f2",
+                        "secondary-fixed": "#ffdbc9",
+                        "on-surface": "#191c1d",
+                        "surface-tint": "#006b58",
+                        "primary-fixed-dim": "#4eddbb",
+                        "primary-container": "#1abc9c",
+                        "error": "#ba1a1a",
+                        "surface-bright": "#f8f9fa",
+                        "on-error": "#ffffff",
+                        "inverse-surface": "#2e3132",
+                        "on-primary-container": "#004538",
+                        "on-secondary-fixed-variant": "#763300",
+                        "on-secondary": "#ffffff",
+                        "on-tertiary-fixed": "#00201d",
+                        "tertiary": "#006a63",
+                        "inverse-primary": "#4eddbb",
+                        "surface-container-low": "#f3f4f5",
+                        "surface-container": "#edeeef",
+                        "outline-variant": "#bbcac3",
+                        "primary": "#006b58",
+                        "tertiary-fixed-dim": "#71d7cd",
+                        "secondary-fixed-dim": "#ffb68d",
+                        "on-tertiary": "#ffffff",
+                        "tertiary-container": "#4eb7ad",
+                        "on-primary": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "surface": "#f8f9fa",
+                        "on-secondary-container": "#672c00",
+                        "tertiary-fixed": "#8ef4e9",
+                        "on-primary-fixed": "#002019"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Plus Jakarta Sans"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .fill-icon {
+            font-variation-settings: 'FILL' 1;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background font-body text-on-surface min-h-screen pb-32">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-white/80 dark:bg-zinc-900/80 backdrop-blur-md shadow-[0_8px_32px_rgba(0,0,0,0.06)]">
+<div class="flex items-center justify-between px-6 py-4 w-full">
+<div class="flex items-center gap-4">
+<button class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-[#1ABC9C]/10 transition-colors active:scale-95 duration-200 text-[#006B58]">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<h1 class="text-2xl font-['Plus_Jakarta_Sans'] font-extrabold tracking-tight text-[#006B58] dark:text-[#1ABC9C]">Drawing</h1>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Portrait of a smiling parent in soft natural light, warm and friendly atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4vuWCK5RBdZhxRxzLHZDsKosVuGx7cMDiW9Pzi6rKhx56Wz4u30zUdnNk3tgBQsG9aEaA57Pd4aBQBRIthAwD1shSTz6NMtv-97u7mohpUs4VBBZIvkwlJ4QPukVJy0hQagkoLV7hoBojCJVl7qg7vhg4oM8zROeN0w0LMAbL4U9Xpe2c7hyDnkhvErOFhBRpVe4Zg3LqPY8qBxLDS5dcRYq84B-D9qLE4josJ7_BSR72ematySvsZSaBEnzCy46PzeS54pqTb_Q"/>
+</div>
+<button class="text-zinc-500 hover:bg-[#1ABC9C]/10 p-2 rounded-full transition-colors active:scale-95 duration-200">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+</div>
+</div>
+</header>
+<main class="pt-24 px-6 max-w-2xl mx-auto space-y-8">
+<!-- Main Activity Card (Hero-style Bento Item) -->
+<section class="bg-surface-container-lowest rounded-lg p-6 shadow-[0_8px_32px_rgba(0,0,0,0.04)] relative overflow-hidden">
+<div class="absolute top-0 right-0 p-4 opacity-10">
+<span class="material-symbols-outlined text-8xl" style="font-variation-settings: 'wght' 200;">brush</span>
+</div>
+<div class="relative z-10 flex flex-col gap-4">
+<div class="flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined">schedule</span>
+<span class="font-semibold text-lg">45 Minutes</span>
+</div>
+<div class="flex flex-col gap-1">
+<span class="text-on-surface-variant text-sm font-medium">October 24, 2023 • 3:30 PM</span>
+<h2 class="text-display-sm font-headline font-bold text-on-surface">Creative Expression</h2>
+</div>
+<div class="flex flex-wrap gap-2 mt-2">
+<span class="px-3 py-1 bg-primary-fixed text-on-primary-fixed-variant rounded-full text-xs font-bold uppercase tracking-wider">Fine Motor</span>
+<span class="px-3 py-1 bg-primary-fixed text-on-primary-fixed-variant rounded-full text-xs font-bold uppercase tracking-wider">Creativity</span>
+<span class="px-3 py-1 bg-surface-container-high text-on-surface-variant rounded-full text-xs font-bold uppercase tracking-wider">#upsQool</span>
+</div>
+</div>
+</section>
+<!-- Evaluation Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Performance Section -->
+<section class="bg-surface-container-low rounded-lg p-6 flex flex-col items-center justify-center text-center">
+<h3 class="font-headline font-semibold text-lg mb-4 text-on-surface">Performance</h3>
+<div class="flex gap-2">
+<span class="material-symbols-outlined text-4xl text-primary fill-icon">star</span>
+<span class="material-symbols-outlined text-4xl text-primary fill-icon">star</span>
+<span class="material-symbols-outlined text-4xl text-primary fill-icon">star</span>
+<span class="material-symbols-outlined text-4xl text-primary fill-icon">star</span>
+<span class="material-symbols-outlined text-4xl text-outline-variant">star</span>
+</div>
+<p class="mt-4 text-sm text-on-surface-variant font-medium">Skill progression: Above Average</p>
+</section>
+<!-- Happiness Score Badge -->
+<section class="bg-primary-container/10 border-2 border-dashed border-primary-container rounded-lg p-6 flex flex-col items-center justify-center text-center">
+<h3 class="font-headline font-semibold text-lg mb-2 text-on-surface">Happiness Score</h3>
+<div class="bg-primary-container text-on-primary-container px-6 py-3 rounded-xl shadow-lg shadow-primary/10">
+<span class="text-3xl font-black font-headline tracking-tighter">4.5 / 5</span>
+</div>
+<p class="mt-3 text-xs text-primary font-bold uppercase tracking-widest">Optimistic Bloom</p>
+</section>
+</div>
+<!-- Enjoyment Section -->
+<section class="bg-surface-container-lowest rounded-lg p-6 shadow-[0_8px_32px_rgba(0,0,0,0.04)]">
+<h3 class="font-headline font-semibold text-lg mb-6 text-on-surface">Child's Enjoyment</h3>
+<div class="flex justify-between items-center px-2">
+<button class="group flex flex-col items-center gap-2 opacity-40 hover:opacity-100 transition-opacity">
+<span class="text-4xl">😡</span>
+<span class="text-[10px] font-bold uppercase tracking-tighter text-on-surface-variant">Frustrated</span>
+</button>
+<button class="group flex flex-col items-center gap-2 opacity-40 hover:opacity-100 transition-opacity">
+<span class="text-4xl">😐</span>
+<span class="text-[10px] font-bold uppercase tracking-tighter text-on-surface-variant">Neutral</span>
+</button>
+<button class="group flex flex-col items-center gap-2 opacity-40 hover:opacity-100 transition-opacity">
+<span class="text-4xl">🙂</span>
+<span class="text-[10px] font-bold uppercase tracking-tighter text-on-surface-variant">Pleased</span>
+</button>
+<button class="group flex flex-col items-center gap-2 scale-125 transform transition-transform">
+<span class="text-4xl">😄</span>
+<span class="text-[10px] font-bold uppercase tracking-tighter text-primary">Very Happy</span>
+<div class="w-1 h-1 bg-primary rounded-full mt-1"></div>
+</button>
+<button class="group flex flex-col items-center gap-2 opacity-40 hover:opacity-100 transition-opacity">
+<span class="text-4xl">🤩</span>
+<span class="text-[10px] font-bold uppercase tracking-tighter text-on-surface-variant">Excited</span>
+</button>
+</div>
+</section>
+<!-- Notes Section -->
+<section class="space-y-3">
+<label class="flex items-center gap-2 font-headline font-semibold text-lg text-on-surface px-1" for="eval-notes">
+<span class="material-symbols-outlined text-primary">edit_note</span>
+                Notes &amp; Observations
+            </label>
+<div class="bg-surface-container-low rounded-lg p-4 ring-2 ring-transparent focus-within:ring-primary-container transition-all">
+<textarea class="w-full bg-transparent border-none focus:ring-0 text-on-surface font-body leading-relaxed resize-none placeholder:text-outline/50" id="eval-notes" placeholder="Describe the focus levels, color choices, or specific moments of breakthrough..." rows="4"></textarea>
+</div>
+</section>
+<!-- Save Button Container -->
+<div class="fixed bottom-0 left-0 w-full p-6 bg-gradient-to-t from-background via-background to-transparent pointer-events-none">
+<div class="max-w-2xl mx-auto pointer-events-auto">
+<button class="w-full h-16 bg-gradient-to-r from-secondary to-secondary-container text-white font-headline font-bold text-lg rounded-lg shadow-xl shadow-secondary/20 flex items-center justify-center gap-3 active:scale-95 transition-all">
+<span class="material-symbols-outlined font-bold">save</span>
+                    Save Evaluation
+                </button>
+</div>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-6 pt-3 bg-white/80 dark:bg-zinc-900/80 backdrop-blur-md rounded-t-[24px] shadow-[0_-8px_32px_rgba(0,0,0,0.06)] z-50">
+<div class="flex flex-col items-center justify-center text-zinc-500 dark:text-zinc-400 py-2 px-5 hover:text-[#1ABC9C] transition-all active:scale-90 duration-200 cursor-pointer">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-['Inter'] text-[11px] font-medium uppercase tracking-wider mt-1">Home</span>
+</div>
+<div class="flex flex-col items-center justify-center bg-[#1ABC9C] dark:bg-[#006B58] text-white rounded-[20px] py-2 px-5 active:scale-90 duration-200 cursor-pointer">
+<span class="material-symbols-outlined" data-icon="calendar_today">calendar_today</span>
+<span class="font-['Inter'] text-[11px] font-medium uppercase tracking-wider mt-1">Calendar</span>
+</div>
+<div class="flex flex-col items-center justify-center text-zinc-500 dark:text-zinc-400 py-2 px-5 hover:text-[#1ABC9C] transition-all active:scale-90 duration-200 cursor-pointer">
+<span class="material-symbols-outlined" data-icon="analytics">analytics</span>
+<span class="font-['Inter'] text-[11px] font-medium uppercase tracking-wider mt-1">Insights</span>
+</div>
+<div class="flex flex-col items-center justify-center text-zinc-500 dark:text-zinc-400 py-2 px-5 hover:text-[#1ABC9C] transition-all active:scale-90 duration-200 cursor-pointer">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-['Inter'] text-[11px] font-medium uppercase tracking-wider mt-1">Profile</span>
+</div>
+</nav>
+</body></html>

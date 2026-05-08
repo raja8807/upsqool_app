@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>upsQool Dashboard</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+        h1, h2, h3, .headline {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "inverse-surface": "#2e3132",
+                        "on-tertiary-fixed-variant": "#00504a",
+                        "secondary-container": "#fc8a40",
+                        "on-tertiary-fixed": "#00201d",
+                        "on-error": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "on-surface-variant": "#3c4a45",
+                        "primary-fixed-dim": "#4eddbb",
+                        "on-secondary-container": "#672c00",
+                        "primary-container": "#1abc9c",
+                        "surface-variant": "#e1e3e4",
+                        "on-primary-fixed": "#002019",
+                        "secondary-fixed-dim": "#ffb68d",
+                        "tertiary-fixed-dim": "#71d7cd",
+                        "surface-dim": "#d9dadb",
+                        "surface-container": "#edeeef",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-fixed-variant": "#005141",
+                        "on-primary-container": "#004538",
+                        "outline-variant": "#bbcac3",
+                        "on-surface": "#191c1d",
+                        "tertiary-fixed": "#8ef4e9",
+                        "on-tertiary-container": "#00443f",
+                        "background": "#f8f9fa",
+                        "surface": "#f8f9fa",
+                        "error-container": "#ffdad6",
+                        "surface-container-highest": "#e1e3e4",
+                        "surface-container-high": "#e7e8e9",
+                        "on-error-container": "#93000a",
+                        "tertiary-container": "#4eb7ad",
+                        "surface-bright": "#f8f9fa",
+                        "on-background": "#191c1d",
+                        "inverse-on-surface": "#f0f1f2",
+                        "primary": "#006b58",
+                        "on-secondary-fixed-variant": "#763300",
+                        "surface-tint": "#006b58",
+                        "secondary": "#9b4500",
+                        "primary-fixed": "#6ff9d6",
+                        "on-primary": "#ffffff",
+                        "on-secondary-fixed": "#331200",
+                        "tertiary": "#006a63",
+                        "surface-container-low": "#f3f4f5",
+                        "outline": "#6c7a75",
+                        "inverse-primary": "#4eddbb",
+                        "error": "#ba1a1a",
+                        "secondary-fixed": "#ffdbc9"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface min-h-screen pb-32">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md shadow-sm dark:shadow-none flex justify-between items-center px-6 py-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full overflow-hidden bg-surface-container-high border-2 border-primary/10">
+<img alt="Liam profile" class="w-full h-full object-cover" data-alt="Close-up portrait of a happy toddler boy with curly hair, soft natural lighting, professional studio photography style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYnZdg0b7KUhdrLn3BOkrUJxxFdgUFij-9iqpi_1Vyi6Qx0p-HnI-laAlI8Oyk8t5h5i9b5vrHXfa8Ewfxi3yt3_EviX_PUxRPkcI0tjEKb5eFWOe1YEFBgzluyMLwD9S95a7rkGZMtkH10JpQH1EpcKby4JgFyeXYZcOnM_30YzmZ4v0Q4xh7KZ-JaFdz-iKOiKvBORNPq_Lhx0NDFKSRfX6AxS8_D_2IDUVkW0ugvVxpiIGrC13JZCoc65EiwMIQVWg9Ox67XEM"/>
+</div>
+<div class="flex flex-col">
+<span class="text-teal-700 dark:text-teal-300 text-2xl font-bold tracking-tight">upsQool</span>
+<span class="text-[10px] font-bold uppercase tracking-widest text-primary/60">Liam's Journey</span>
+</div>
+</div>
+<button class="w-10 h-10 flex items-center justify-center rounded-full text-slate-500 hover:bg-slate-100/50 transition-colors active:scale-95">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+</button>
+</header>
+<main class="pt-24 px-6 max-w-2xl mx-auto space-y-8">
+<!-- Today's Summary Section -->
+<section class="relative">
+<div class="bg-surface-container-lowest p-6 rounded-lg shadow-[0_8px_32px_0_rgba(0,107,88,0.06)] overflow-hidden">
+<!-- Asymmetric background accent -->
+<div class="absolute -top-12 -right-12 w-32 h-32 bg-primary/5 rounded-full blur-3xl"></div>
+<div class="flex justify-between items-start mb-6">
+<div>
+<p class="label-sm text-on-surface-variant font-medium tracking-wide mb-1">CURRENT OVERVIEW</p>
+<h2 class="headline text-2xl font-bold text-on-surface">Today's Summary</h2>
+</div>
+<div class="bg-primary-container/10 px-3 py-1 rounded-full">
+<span class="text-xs font-bold text-primary">LIVE</span>
+</div>
+</div>
+<div class="space-y-4">
+<div class="flex items-end justify-between">
+<div>
+<span class="text-4xl font-extrabold text-primary font-headline">1h 30m</span>
+<p class="text-on-surface-variant text-sm mt-1">Total time spent</p>
+</div>
+<div class="text-right">
+<span class="text-sm font-semibold text-secondary">+12%</span>
+<p class="text-[10px] text-on-surface-variant uppercase">vs Yesterday</p>
+</div>
+</div>
+<div class="w-full h-3 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-gradient-to-r from-primary to-primary-container rounded-full" style="width: 65%;"></div>
+</div>
+<p class="text-xs text-on-surface-variant/70 italic text-right">Daily goal: 2h 15m</p>
+</div>
+</div>
+</section>
+<!-- Q Distribution - Editorial Bento Grid style -->
+<section>
+<div class="flex justify-between items-baseline mb-6">
+<h2 class="headline text-xl font-bold">Q Distribution</h2>
+<button class="text-primary text-xs font-bold flex items-center gap-1">
+                    DETAILS <span class="material-symbols-outlined text-sm">chevron_right</span>
+</button>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<!-- Intelligence -->
+<div class="bg-surface-container-low p-5 rounded-lg flex flex-col justify-between aspect-square border-b-4 border-teal-500/20">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="psychology">psychology</span>
+<div>
+<p class="font-headline font-bold text-on-surface">Intelligence</p>
+<div class="flex items-center gap-2 mt-1">
+<div class="flex-1 h-1 bg-surface-variant rounded-full">
+<div class="h-full bg-primary rounded-full w-[80%]"></div>
+</div>
+<span class="text-[10px] font-bold text-on-surface-variant">80%</span>
+</div>
+</div>
+</div>
+<!-- Emotional -->
+<div class="bg-secondary-container/10 p-5 rounded-lg flex flex-col justify-between aspect-square border-b-4 border-secondary-container/20">
+<span class="material-symbols-outlined text-secondary-container text-3xl" data-icon="favorite" style="font-variation-settings: 'FILL' 1;">favorite</span>
+<div>
+<p class="font-headline font-bold text-on-surface">Emotional</p>
+<div class="flex items-center gap-2 mt-1">
+<div class="flex-1 h-1 bg-surface-variant rounded-full">
+<div class="h-full bg-secondary-container rounded-full w-[92%]"></div>
+</div>
+<span class="text-[10px] font-bold text-on-surface-variant">92%</span>
+</div>
+</div>
+</div>
+<!-- Three smaller wide cards for balance -->
+<div class="col-span-2 grid grid-cols-3 gap-3">
+<div class="bg-surface-container-low p-4 rounded-lg flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-teal-600 mb-2" data-icon="palette">palette</span>
+<span class="text-[10px] font-bold text-on-surface-variant">Creative</span>
+</div>
+<div class="bg-surface-container-low p-4 rounded-lg flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-teal-600 mb-2" data-icon="directions_run">directions_run</span>
+<span class="text-[10px] font-bold text-on-surface-variant">Physical</span>
+</div>
+<div class="bg-surface-container-low p-4 rounded-lg flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-teal-600 mb-2" data-icon="potted_plant">potted_plant</span>
+<span class="text-[10px] font-bold text-on-surface-variant">Values</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Activity Feed -->
+<section class="space-y-4">
+<h2 class="headline text-xl font-bold">Recent Activities</h2>
+<div class="space-y-3">
+<!-- Activity Card 1 -->
+<div class="bg-surface-container-lowest p-4 rounded-lg flex items-center gap-4 transition-all hover:bg-white active:scale-[0.98]">
+<div class="w-14 h-14 rounded-full overflow-hidden bg-surface-container flex-shrink-0">
+<img alt="Drawing activity" class="w-full h-full object-cover" data-alt="Colorful messy hand painting with vibrant gouache colors on white paper, artistic process shot" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVg9C9qkc_LoPLCZEEO1xy1zq9JQ9Mr9_p89p7ZRYmAwnxRjn-BouAxdLAQRTQK_flLpqx_cNQCx7L48dgWF_YT4dv7vHSgFGygcXy51M75x0aQBSdD-D2j_fyRYtYdO_lVCPPAgzQ6rZZ1EZ-HbsExrun-shgY4SrCtYAF06-0LmcmuPfNv11T7WwtkB4XesttesZ-b92tjDAsQVJlqU8K1fLa_ZTS3fCln7nXXcWmMPJpQ-FuTvP5Eqw6TcQ37RLafMnHz82Pig"/>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex justify-between items-start">
+<h3 class="font-bold text-on-surface truncate">Freeform Drawing</h3>
+<div class="flex items-center gap-1 px-2 py-0.5 bg-yellow-100 rounded-full">
+<span class="material-symbols-outlined text-yellow-700 text-[12px]" style="font-variation-settings: 'FILL' 1;">mood</span>
+<span class="text-[10px] font-bold text-yellow-700">9.5</span>
+</div>
+</div>
+<p class="text-xs text-on-surface-variant mb-2">45 mins • Today, 10:30 AM</p>
+<div class="flex gap-2">
+<span class="px-2 py-0.5 bg-primary/10 text-primary text-[10px] font-bold rounded-full">CREATIVE</span>
+<span class="px-2 py-0.5 bg-primary/10 text-primary text-[10px] font-bold rounded-full">MOTOR</span>
+</div>
+</div>
+</div>
+<!-- Activity Card 2 -->
+<div class="bg-surface-container-lowest p-4 rounded-lg flex items-center gap-4 transition-all hover:bg-white active:scale-[0.98]">
+<div class="w-14 h-14 rounded-full overflow-hidden bg-surface-container flex-shrink-0">
+<img alt="Reading activity" class="w-full h-full object-cover" data-alt="Open children's picture book with colorful illustrations resting on a cozy soft blanket" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2NqpMAvaYOfusTwGSvddXDMr2gRkQVXO1KIi7FMHZXhNO7iivlkP0z5kiIOEwkd3dKaaHsHTwQeWWpwcvn-U7Zb8Og63A5rc2A2H9IWoe-WEReze2iRDuVn4NYHNVpu0aJc9Spmf24e77MQNzozJk7MfKyOaaXzbWDV88WR6S2o__BzCJoMbAe8dFE3ml9tYY_26zAH9cLzh6sEaIrWz42YD3KqMUtEvnO40YdrvsvEUjFlt94dUOBX50Eo8zUIsb-dl1fZSah-M"/>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex justify-between items-start">
+<h3 class="font-bold text-on-surface truncate">Story Time: Jungle Tales</h3>
+<div class="flex items-center gap-1 px-2 py-0.5 bg-yellow-100 rounded-full">
+<span class="material-symbols-outlined text-yellow-700 text-[12px]" style="font-variation-settings: 'FILL' 1;">mood</span>
+<span class="text-[10px] font-bold text-yellow-700">8.2</span>
+</div>
+</div>
+<p class="text-xs text-on-surface-variant mb-2">20 mins • Today, 09:15 AM</p>
+<div class="flex gap-2">
+<span class="px-2 py-0.5 bg-primary/10 text-primary text-[10px] font-bold rounded-full">INTELLIGENCE</span>
+<span class="px-2 py-0.5 bg-primary/10 text-primary text-[10px] font-bold rounded-full">VALUES</span>
+</div>
+</div>
+</div>
+<!-- Activity Card 3 -->
+<div class="bg-surface-container-lowest p-4 rounded-lg flex items-center gap-4 opacity-70 transition-all hover:opacity-100">
+<div class="w-14 h-14 rounded-full overflow-hidden bg-surface-container flex-shrink-0">
+<img alt="Blocks activity" class="w-full h-full object-cover" data-alt="Brightly colored wooden building blocks stacked in a tall tower on a wooden floor" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfjFzN1_bzTX4UrhvGDNJMY7GUyXlq16Soj3EbhQirAgiSwV2236KkYKli4uQ6Zn87wykBg_hgRk-hAFAWNw5dgFovPYjXXpcvI62V-AVSAFT8iwhPT9VRrwZzZ_ZJ3f0b9zPXvHFae3r_ajuGrmn1BVQhp2orYa8rro54zqem5bI-h9t4Fhon1A0-I_OIXrp8ulAA3xX69YIc71qSFN6u8CM_tsOD45zpY6RCRJ_lpsLbVnJaKGkKgYgsk8XnFtbVfOtx5KZmFTU"/>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex justify-between items-start">
+<h3 class="font-bold text-on-surface truncate">Block Engineering</h3>
+<div class="flex items-center gap-1 px-2 py-0.5 bg-yellow-100 rounded-full">
+<span class="material-symbols-outlined text-yellow-700 text-[12px]" style="font-variation-settings: 'FILL' 1;">mood</span>
+<span class="text-[10px] font-bold text-yellow-700">7.8</span>
+</div>
+</div>
+<p class="text-xs text-on-surface-variant mb-2">25 mins • Yesterday</p>
+<div class="flex gap-2">
+<span class="px-2 py-0.5 bg-primary/10 text-primary text-[10px] font-bold rounded-full">PHYSICAL</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Floating Action Button -->
+<div class="fixed bottom-28 left-1/2 -translate-x-1/2 z-50">
+<button class="w-16 h-16 rounded-full bg-gradient-to-br from-primary to-primary-container text-white shadow-[0_12px_24px_rgba(0,107,88,0.3)] flex items-center justify-center transition-all hover:scale-105 active:scale-90">
+<span class="material-symbols-outlined text-3xl" data-icon="add_circle" style="font-variation-settings: 'FILL' 1;">add_circle</span>
+</button>
+</div>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-6 pt-3 bg-white/90 dark:bg-slate-950/90 backdrop-blur-xl rounded-t-[24px] shadow-[0_-4px_20px_0_rgba(0,0,0,0.06)] z-50">
+<a class="flex flex-col items-center justify-center bg-teal-50 dark:bg-teal-900/30 text-teal-700 dark:text-teal-200 rounded-[20px] px-5 py-2.5 transition-all active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="home" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="font-['Inter'] text-[11px] font-medium tracking-wide">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-5 py-2.5 hover:text-teal-500 dark:hover:text-teal-300 transition-all active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="equalizer">equalizer</span>
+<span class="font-['Inter'] text-[11px] font-medium tracking-wide">Stats</span>
+</a>
+<div class="w-16 h-8"></div> <!-- Spacer for FAB -->
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-5 py-2.5 hover:text-teal-500 dark:hover:text-teal-300 transition-all active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="explore">explore</span>
+<span class="font-['Inter'] text-[11px] font-medium tracking-wide">Discover</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-5 py-2.5 hover:text-teal-500 dark:hover:text-teal-300 transition-all active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-['Inter'] text-[11px] font-medium tracking-wide">Profile</span>
+</a>
+</nav>
+</body></html>

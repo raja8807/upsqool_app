@@ -1,0 +1,37 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "@components/*": [
+                "src/components/*"
+            ],
+            "@styles/*": [
+                "src/styles/*"
+            ],
+            "@services/*": [
+                "src/services/*"
+            ],
+            "@config/*": [
+                "src/config/*"
+            ],
+            "@lib/*": [
+                "src/lib/*"
+            ],
+            "@assets/*": [
+                "assets/*"
+            ],
+            "@screens/*": [
+                "src/screens/*"
+            ],
+            "@context/*": [
+                "src/context/*"
+            ]
+        }
+    },
+    "exclude": [
+        "node_modules",
+        "babel.config.js",
+        "metro.config.js",
+        "jest.config.js"
+    ]
+}

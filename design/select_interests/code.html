@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Interests - upsQool</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary": "#006a63",
+                    "secondary-fixed": "#ffdbc9",
+                    "surface-container-high": "#e7e8e9",
+                    "surface-container-highest": "#e1e3e4",
+                    "secondary-fixed-dim": "#ffb68d",
+                    "inverse-primary": "#4eddbb",
+                    "inverse-surface": "#2e3132",
+                    "on-tertiary": "#ffffff",
+                    "surface-dim": "#d9dadb",
+                    "primary-container": "#1abc9c",
+                    "on-primary": "#ffffff",
+                    "on-error-container": "#93000a",
+                    "primary-fixed-dim": "#4eddbb",
+                    "surface-variant": "#e1e3e4",
+                    "primary": "#006b58",
+                    "surface-container-lowest": "#ffffff",
+                    "tertiary-container": "#4eb7ad",
+                    "surface-bright": "#f8f9fa",
+                    "on-primary-fixed-variant": "#005141",
+                    "on-surface": "#191c1d",
+                    "tertiary-fixed": "#8ef4e9",
+                    "secondary-container": "#fc8a40",
+                    "on-background": "#191c1d",
+                    "outline-variant": "#bbcac3",
+                    "on-secondary-fixed": "#331200",
+                    "on-primary-container": "#004538",
+                    "secondary": "#9b4500",
+                    "primary-fixed": "#6ff9d6",
+                    "error": "#ba1a1a",
+                    "on-error": "#ffffff",
+                    "on-secondary-container": "#672c00",
+                    "background": "#f8f9fa",
+                    "surface-tint": "#006b58",
+                    "outline": "#6c7a75",
+                    "on-secondary-fixed-variant": "#763300",
+                    "on-surface-variant": "#3c4a45",
+                    "surface-container": "#edeeef",
+                    "surface-container-low": "#f3f4f5",
+                    "on-tertiary-container": "#00443f",
+                    "on-secondary": "#ffffff",
+                    "on-primary-fixed": "#002019",
+                    "inverse-on-surface": "#f0f1f2",
+                    "tertiary-fixed-dim": "#71d7cd",
+                    "on-tertiary-fixed": "#00201d",
+                    "error-container": "#ffdad6",
+                    "on-tertiary-fixed-variant": "#00504a",
+                    "surface": "#f8f9fa"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Plus Jakarta Sans"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        }
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Plus Jakarta Sans', sans-serif; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface min-h-screen flex flex-col items-center">
+<!-- Top Navigation Anchor (Manual for Onboarding) -->
+<header class="fixed top-0 w-full z-50 bg-[#F8F9FA]/80 backdrop-blur-xl">
+<div class="flex items-center justify-between px-6 h-16 w-full max-w-screen-xl mx-auto">
+<button class="w-10 h-10 flex items-center justify-center text-primary active:scale-95 transition-transform duration-200">
+<span class="material-symbols-outlined" data-icon="arrow_back">arrow_back</span>
+</button>
+<span class="text-[#006B58] font-black text-2xl tracking-tighter italic">upsQool</span>
+<div class="w-10"></div> <!-- Spacer for balance -->
+</div>
+</header>
+<main class="flex-1 w-full max-w-md px-6 pt-24 pb-40 flex flex-col">
+<!-- Editorial Header -->
+<div class="mb-10 pr-12">
+<h1 class="text-3xl font-bold text-on-surface leading-tight tracking-tight mb-3">
+                What does your child enjoy?
+            </h1>
+<p class="text-on-surface-variant text-lg leading-relaxed opacity-80">
+                Select a few to personalize the experience
+            </p>
+</div>
+<!-- Interests Grid (Asymmetric Bento-ish layout within constraints) -->
+<div class="grid grid-cols-2 gap-4">
+<!-- Item: Drawing (Selected State Example) -->
+<button class="flex flex-col items-start p-6 rounded-lg bg-primary-container text-on-primary shadow-sm ring-2 ring-primary transition-all duration-300">
+<div class="w-12 h-12 flex items-center justify-center bg-white/20 rounded-full mb-4">
+<span class="material-symbols-outlined text-2xl" data-icon="palette">palette</span>
+</div>
+<span class="font-headline font-semibold text-lg">Drawing</span>
+</button>
+<!-- Item: Sports -->
+<button class="flex flex-col items-start p-6 rounded-lg bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container-low transition-all duration-300">
+<div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-full mb-4">
+<span class="material-symbols-outlined text-2xl text-primary" data-icon="sports_soccer">sports_soccer</span>
+</div>
+<span class="font-headline font-semibold text-lg">Sports</span>
+</button>
+<!-- Item: Music -->
+<button class="flex flex-col items-start p-6 rounded-lg bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container-low transition-all duration-300">
+<div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-full mb-4">
+<span class="material-symbols-outlined text-2xl text-primary" data-icon="music_note">music_note</span>
+</div>
+<span class="font-headline font-semibold text-lg">Music</span>
+</button>
+<!-- Item: Reading -->
+<button class="flex flex-col items-start p-6 rounded-lg bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container-low transition-all duration-300">
+<div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-full mb-4">
+<span class="material-symbols-outlined text-2xl text-primary" data-icon="menu_book">menu_book</span>
+</div>
+<span class="font-headline font-semibold text-lg">Reading</span>
+</button>
+<!-- Item: Puzzles -->
+<button class="flex flex-col items-start p-6 rounded-lg bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container-low transition-all duration-300">
+<div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-full mb-4">
+<span class="material-symbols-outlined text-2xl text-primary" data-icon="extension">extension</span>
+</div>
+<span class="font-headline font-semibold text-lg">Puzzles</span>
+</button>
+<!-- Item: Dance -->
+<button class="flex flex-col items-start p-6 rounded-lg bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container-low transition-all duration-300">
+<div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-full mb-4">
+<span class="material-symbols-outlined text-2xl text-primary" data-icon="self_improvement">self_improvement</span>
+</div>
+<span class="font-headline font-semibold text-lg">Dance</span>
+</button>
+<!-- Item: Science -->
+<button class="flex flex-col items-start p-6 rounded-lg bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container-low transition-all duration-300">
+<div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-full mb-4">
+<span class="material-symbols-outlined text-2xl text-primary" data-icon="biotech">biotech</span>
+</div>
+<span class="font-headline font-semibold text-lg">Science</span>
+</button>
+<!-- Item: Nature -->
+<button class="flex flex-col items-start p-6 rounded-lg bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container-low transition-all duration-300">
+<div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-full mb-4">
+<span class="material-symbols-outlined text-2xl text-primary" data-icon="eco">eco</span>
+</div>
+<span class="font-headline font-semibold text-lg">Nature</span>
+</button>
+</div>
+<!-- Visual Anchor Background Decoration (Faint) -->
+<div class="fixed -bottom-24 -left-24 w-64 h-64 bg-primary/5 rounded-full blur-[80px] -z-10"></div>
+<div class="fixed top-1/2 -right-32 w-80 h-80 bg-secondary-container/10 rounded-full blur-[100px] -z-10"></div>
+</main>
+<!-- Bottom Footer Anchor (Fixed) -->
+<footer class="fixed bottom-0 left-0 w-full bg-[#F8F9FA]/90 backdrop-blur-xl px-6 pt-6 pb-10 flex flex-col items-center gap-6">
+<!-- Progress Indicator -->
+<div class="flex flex-col items-center gap-2">
+<span class="text-label-sm font-label uppercase tracking-widest text-on-surface-variant/60 font-semibold text-[10px]">
+                Step 1 of 2
+            </span>
+<div class="flex gap-1">
+<div class="h-1.5 w-8 rounded-full bg-primary"></div>
+<div class="h-1.5 w-8 rounded-full bg-outline-variant/30"></div>
+</div>
+</div>
+<!-- Continue Action -->
+<button class="w-full max-w-md py-4 rounded-lg bg-gradient-to-r from-secondary-container to-[#FC8A40] text-white font-headline font-bold text-lg shadow-lg active:scale-[0.98] transition-transform duration-200">
+            Continue
+        </button>
+</footer>
+</body></html>

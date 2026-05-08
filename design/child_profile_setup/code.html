@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>upsQool - Child Profile Setup</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-surface-variant": "#3c4a45",
+                    "surface-container": "#edeeef",
+                    "inverse-on-surface": "#f0f1f2",
+                    "surface-container-low": "#f3f4f5",
+                    "on-tertiary-container": "#00443f",
+                    "on-secondary": "#ffffff",
+                    "on-primary-fixed": "#002019",
+                    "tertiary-fixed-dim": "#71d7cd",
+                    "on-tertiary-fixed": "#00201d",
+                    "error-container": "#ffdad6",
+                    "on-tertiary-fixed-variant": "#00504a",
+                    "surface": "#f8f9fa",
+                    "on-background": "#191c1d",
+                    "outline-variant": "#bbcac3",
+                    "on-secondary-fixed": "#331200",
+                    "on-primary-container": "#004538",
+                    "secondary": "#9b4500",
+                    "primary-fixed": "#6ff9d6",
+                    "error": "#ba1a1a",
+                    "on-error": "#ffffff",
+                    "on-secondary-container": "#672c00",
+                    "background": "#f8f9fa",
+                    "on-secondary-fixed-variant": "#763300",
+                    "surface-tint": "#006b58",
+                    "outline": "#6c7a75",
+                    "primary-container": "#1abc9c",
+                    "surface-dim": "#d9dadb",
+                    "on-primary": "#ffffff",
+                    "on-error-container": "#93000a",
+                    "primary-fixed-dim": "#4eddbb",
+                    "surface-variant": "#e1e3e4",
+                    "primary": "#006b58",
+                    "tertiary-container": "#4eb7ad",
+                    "surface-bright": "#f8f9fa",
+                    "on-primary-fixed-variant": "#005141",
+                    "surface-container-lowest": "#ffffff",
+                    "on-surface": "#191c1d",
+                    "tertiary-fixed": "#8ef4e9",
+                    "secondary-container": "#fc8a40",
+                    "secondary-fixed": "#ffdbc9",
+                    "tertiary": "#006a63",
+                    "surface-container-highest": "#e1e3e4",
+                    "surface-container-high": "#e7e8e9",
+                    "secondary-fixed-dim": "#ffb68d",
+                    "inverse-primary": "#4eddbb",
+                    "inverse-surface": "#2e3132",
+                    "on-tertiary": "#ffffff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Plus Jakarta Sans"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .slider-thumb::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 24px;
+            height: 24px;
+            background: #006b58;
+            border-radius: 50%;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(0, 107, 88, 0.2);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface font-body text-on-surface antialiased min-h-screen flex flex-col items-center">
+<!-- Top Navigation Header -->
+<header class="fixed top-0 w-full bg-slate-50/80 backdrop-blur-xl z-50 flex items-center justify-between px-6 py-4">
+<div class="flex items-center gap-4">
+<button class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-slate-100 transition-colors active:scale-95 duration-200">
+<span class="material-symbols-outlined text-[#006B58]">arrow_back</span>
+</button>
+<h1 class="text-xl font-bold text-[#006B58] font-headline">Profile Setup</h1>
+</div>
+<div class="flex flex-col items-end">
+<span class="text-xs font-medium text-slate-500 uppercase tracking-widest">Step 2 of 3</span>
+<div class="flex gap-1 mt-1">
+<div class="h-1.5 w-6 rounded-full bg-primary-container"></div>
+<div class="h-1.5 w-12 rounded-full bg-primary"></div>
+<div class="h-1.5 w-6 rounded-full bg-surface-container-high"></div>
+</div>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="w-full max-w-lg mt-24 mb-32 px-6 overflow-y-auto hide-scrollbar">
+<!-- Hero Profile Upload -->
+<section class="flex flex-col items-center mb-10">
+<div class="relative group">
+<div class="w-32 h-32 rounded-full bg-surface-container-low flex flex-col items-center justify-center overflow-hidden border-4 border-surface-container-lowest shadow-lg">
+<!-- Placeholder using a gentle abstract background -->
+<div class="absolute inset-0 bg-gradient-to-br from-primary-fixed/20 to-secondary-fixed/20 opacity-40"></div>
+<span class="material-symbols-outlined text-outline text-4xl mb-1">child_care</span>
+<span class="text-xs font-semibold text-on-surface-variant font-label">Add Photo</span>
+</div>
+<button class="absolute bottom-1 right-1 w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white shadow-xl hover:scale-105 transition-transform active:scale-90">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">add_a_photo</span>
+</button>
+</div>
+<h2 class="mt-6 text-2xl font-headline font-bold text-center tracking-tight">Tell us about your child</h2>
+<p class="text-on-surface-variant text-sm text-center mt-2 leading-relaxed max-w-[280px]">Personalizing the experience helps us provide more accurate development tracking.</p>
+</section>
+<!-- Form Section -->
+<div class="space-y-8">
+<!-- Gender Selection -->
+<div class="space-y-3">
+<label class="text-sm font-semibold text-on-surface ml-1 font-label">Gender</label>
+<div class="grid grid-cols-2 p-1.5 bg-surface-container-low rounded-lg gap-1">
+<button class="flex items-center justify-center gap-2 py-3 px-4 rounded-[14px] bg-primary-container text-white font-semibold shadow-md transition-all active:scale-[0.98]">
+<span class="material-symbols-outlined text-xl">male</span>
+<span>Male</span>
+</button>
+<button class="flex items-center justify-center gap-2 py-3 px-4 rounded-[14px] text-on-surface-variant font-medium hover:bg-surface-container transition-colors active:scale-[0.98]">
+<span class="material-symbols-outlined text-xl">female</span>
+<span>Female</span>
+</button>
+</div>
+</div>
+<!-- Basic Info Fields -->
+<div class="space-y-5">
+<div class="grid grid-cols-2 gap-4">
+<div class="space-y-2">
+<label class="text-xs font-bold text-on-surface-variant uppercase tracking-wider ml-1">First Name</label>
+<input class="w-full h-14 px-5 bg-surface-container-lowest rounded-DEFAULT border-none focus:ring-2 focus:ring-primary/20 text-on-surface font-medium placeholder:text-outline-variant" placeholder="e.g. Leo" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-bold text-on-surface-variant uppercase tracking-wider ml-1">Last Name</label>
+<input class="w-full h-14 px-5 bg-surface-container-lowest rounded-DEFAULT border-none focus:ring-2 focus:ring-primary/20 text-on-surface font-medium placeholder:text-outline-variant" placeholder="e.g. Silva" type="text"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-bold text-on-surface-variant uppercase tracking-wider ml-1">Date of Birth</label>
+<div class="relative">
+<input class="w-full h-14 px-5 bg-surface-container-lowest rounded-DEFAULT border-none focus:ring-2 focus:ring-primary/20 text-on-surface font-medium appearance-none" type="date"/>
+<span class="absolute right-4 top-1/2 -translate-y-1/2 material-symbols-outlined text-outline pointer-events-none">calendar_month</span>
+</div>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-bold text-on-surface-variant uppercase tracking-wider ml-1">School (Optional)</label>
+<input class="w-full h-14 px-5 bg-surface-container-lowest rounded-DEFAULT border-none focus:ring-2 focus:ring-primary/20 text-on-surface font-medium placeholder:text-outline-variant" placeholder="Search school name..." type="text"/>
+</div>
+</div>
+<!-- Development Slider -->
+<div class="p-6 bg-surface-container-low/50 rounded-lg space-y-6">
+<div class="flex justify-between items-end">
+<div class="space-y-1">
+<h3 class="font-headline font-bold text-on-surface">Development time per day</h3>
+<p class="text-xs text-on-surface-variant leading-tight">Estimate hours spent in active learning or play.</p>
+</div>
+<div class="text-right">
+<span class="text-3xl font-headline font-extrabold text-primary">5</span>
+<span class="text-sm font-bold text-primary ml-1 uppercase">hrs</span>
+</div>
+</div>
+<div class="relative pt-2">
+<input class="slider-thumb appearance-none w-full h-2 bg-primary-fixed rounded-full outline-none" max="12" min="0" type="range" value="5"/>
+<div class="flex justify-between mt-3 text-[10px] font-bold text-outline-variant uppercase">
+<span>0 hours</span>
+<span>6 hours</span>
+<span>12 hours</span>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Sticky Bottom Action -->
+<footer class="fixed bottom-0 w-full bg-white/80 backdrop-blur-xl px-6 py-6 pb-8 z-50 flex items-center justify-center rounded-t-lg shadow-[0_-8px_32px_rgba(0,0,0,0.06)]">
+<button class="w-full max-w-md h-16 bg-secondary-container text-white font-headline font-bold text-lg rounded-full flex items-center justify-center gap-3 shadow-xl hover:scale-[1.02] active:scale-[0.96] transition-all">
+<span>Next</span>
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</footer>
+<!-- Bottom Navigation (Filtered: Suppressed due to Transactional flow/Setup intent) -->
+<!-- Navigation shell suppressed for focused onboarding journey -->
+</body></html>

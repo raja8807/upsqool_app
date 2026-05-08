@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-container": "#00443f",
+                    "surface-container-highest": "#e1e3e4",
+                    "surface-container-high": "#e7e8e9",
+                    "primary-fixed": "#6ff9d6",
+                    "surface-variant": "#e1e3e4",
+                    "error-container": "#ffdad6",
+                    "on-surface-variant": "#3c4a45",
+                    "on-background": "#191c1d",
+                    "background": "#f8f9fa",
+                    "on-secondary-fixed": "#331200",
+                    "on-primary-fixed-variant": "#005141",
+                    "secondary-container": "#fc8a40",
+                    "outline": "#6c7a75",
+                    "on-tertiary-fixed-variant": "#00504a",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-dim": "#d9dadb",
+                    "secondary": "#9b4500",
+                    "inverse-on-surface": "#f0f1f2",
+                    "secondary-fixed": "#ffdbc9",
+                    "on-surface": "#191c1d",
+                    "surface-tint": "#006b58",
+                    "primary-fixed-dim": "#4eddbb",
+                    "primary-container": "#1abc9c",
+                    "error": "#ba1a1a",
+                    "surface-bright": "#f8f9fa",
+                    "on-error": "#ffffff",
+                    "inverse-surface": "#2e3132",
+                    "on-primary-container": "#004538",
+                    "on-secondary-fixed-variant": "#763300",
+                    "on-secondary": "#ffffff",
+                    "on-tertiary-fixed": "#00201d",
+                    "tertiary": "#006a63",
+                    "inverse-primary": "#4eddbb",
+                    "surface-container-low": "#f3f4f5",
+                    "surface-container": "#edeeef",
+                    "outline-variant": "#bbcac3",
+                    "primary": "#006b58",
+                    "tertiary-fixed-dim": "#71d7cd",
+                    "secondary-fixed-dim": "#ffb68d",
+                    "on-tertiary": "#ffffff",
+                    "tertiary-container": "#4eb7ad",
+                    "on-primary": "#ffffff",
+                    "on-error-container": "#93000a",
+                    "surface": "#f8f9fa",
+                    "on-secondary-container": "#672c00",
+                    "tertiary-fixed": "#8ef4e9",
+                    "on-primary-fixed": "#002019"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Plus Jakarta Sans"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        }
+      }
+    </script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Plus Jakarta Sans', sans-serif; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface min-h-screen pb-32">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-white/80 dark:bg-zinc-900/80 backdrop-blur-md shadow-[0_8px_32px_rgba(0,0,0,0.06)]">
+<div class="flex items-center justify-between px-6 py-4 w-full">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full overflow-hidden bg-surface-container-high">
+<img alt="Parent Profile Avatar" class="w-full h-full object-cover" data-alt="Close-up portrait of a smiling young mother with warm lighting and a soft focus blurred greenery background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuGFICFtcTBsa-ssLP5E7uw8WBRpZnq8fAZzo_NkfovbbPJvoFedKYLOYOOgDWnXXMpW-cgvKCaBN5Y1CP4wcbOZCEqHI3HuWanrrufjxZT2EZcwXxLj8hMrGU3j3N9vLen0moFQhsAOIfBlyCXhBFwtq7-keWD8_nx4zQWdvHYG3pPKk-8oPpbka4j9kq3zb9EJ32SoV60y-A4h2MG6ixGBjgZU7l1MxRQ_naKTiKwAy5WJGO1GAqeA4G-u4zUErjo5UbyY1o3PY"/>
+</div>
+<span class="text-2xl font-extrabold text-[#006B58] dark:text-[#1ABC9C] tracking-tight">upsQool</span>
+</div>
+<div class="flex items-center gap-2">
+<button class="p-2 rounded-full hover:bg-[#1ABC9C]/10 transition-colors active:scale-95 duration-200 text-zinc-500">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+</div>
+</div>
+</header>
+<main class="pt-24 px-6 max-w-4xl mx-auto">
+<!-- Month Selector Section -->
+<section class="mb-8">
+<div class="flex items-center justify-between">
+<h1 class="text-[2.5rem] font-bold text-on-surface tracking-tight leading-none">April 2026</h1>
+<div class="flex gap-2">
+<button class="p-3 bg-surface-container-low rounded-full text-primary hover:bg-primary-container/10 transition-all">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<button class="p-3 bg-surface-container-low rounded-full text-primary hover:bg-primary-container/10 transition-all">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+</div>
+<p class="text-on-surface-variant mt-2 font-medium">Tracking 12 growth milestones this month</p>
+</section>
+<!-- Calendar Grid -->
+<section class="mb-10 bg-surface-container-lowest rounded-lg p-6 shadow-[0_8px_32px_rgba(0,0,0,0.04)]">
+<!-- Weekday Headers -->
+<div class="grid grid-cols-7 mb-4 text-center">
+<span class="text-label-sm font-bold text-on-surface-variant uppercase tracking-widest text-[10px]">Mon</span>
+<span class="text-label-sm font-bold text-on-surface-variant uppercase tracking-widest text-[10px]">Tue</span>
+<span class="text-label-sm font-bold text-on-surface-variant uppercase tracking-widest text-[10px]">Wed</span>
+<span class="text-label-sm font-bold text-on-surface-variant uppercase tracking-widest text-[10px]">Thu</span>
+<span class="text-label-sm font-bold text-on-surface-variant uppercase tracking-widest text-[10px]">Fri</span>
+<span class="text-label-sm font-bold text-on-surface-variant uppercase tracking-widest text-[10px]">Sat</span>
+<span class="text-label-sm font-bold text-on-surface-variant uppercase tracking-widest text-[10px]">Sun</span>
+</div>
+<!-- Grid Days -->
+<div class="grid grid-cols-7 gap-y-6">
+<!-- Row 1 Padding -->
+<div class="aspect-square flex flex-col items-center justify-center text-outline-variant opacity-30">29</div>
+<div class="aspect-square flex flex-col items-center justify-center text-outline-variant opacity-30">30</div>
+<div class="aspect-square flex flex-col items-center justify-center text-outline-variant opacity-30">31</div>
+<!-- Days 1-7 -->
+<div class="aspect-square flex flex-col items-center justify-center relative">
+<span class="text-lg font-semibold mb-1">1</span>
+<div class="flex gap-0.5 justify-center">
+<span class="w-1 h-1 rounded-full bg-primary"></span>
+<span class="w-1 h-1 rounded-full bg-secondary-container"></span>
+</div>
+</div>
+<div class="aspect-square flex flex-col items-center justify-center">
+<span class="text-lg font-semibold mb-1">2</span>
+<div class="flex gap-0.5 justify-center">
+<span class="w-1 h-1 rounded-full bg-tertiary"></span>
+</div>
+</div>
+<div class="aspect-square flex flex-col items-center justify-center">
+<span class="text-lg font-semibold mb-1">3</span>
+<div class="flex gap-0.5 justify-center">
+<span class="w-1 h-1 rounded-full bg-primary"></span>
+<span class="w-1 h-1 rounded-full bg-primary-container"></span>
+</div>
+</div>
+<div class="aspect-square flex flex-col items-center justify-center">
+<span class="text-lg font-semibold mb-1">4</span>
+</div>
+<!-- Row 2 -->
+<div class="aspect-square flex flex-col items-center justify-center">
+<span class="text-lg font-semibold mb-1">5</span>
+<div class="flex gap-0.5 justify-center">
+<span class="w-1 h-1 rounded-full bg-secondary-container"></span>
+</div>
+</div>
+<div class="aspect-square flex flex-col items-center justify-center">
+<span class="text-lg font-semibold mb-1">6</span>
+<div class="flex gap-0.5 justify-center">
+<span class="w-1 h-1 rounded-full bg-primary"></span>
+<span class="w-1 h-1 rounded-full bg-tertiary"></span>
+<span class="w-1 h-1 rounded-full bg-primary-container"></span>
+</div>
+</div>
+<div class="aspect-square flex flex-col items-center justify-center">
+<span class="text-lg font-semibold mb-1">7</span>
+</div>
+<!-- Active Day Highlight -->
+<div class="aspect-square flex flex-col items-center justify-center bg-primary text-white rounded-lg shadow-lg">
+<span class="text-lg font-bold mb-1">8</span>
+<div class="flex gap-0.5 justify-center">
+<span class="w-1 h-1 rounded-full bg-white"></span>
+<span class="w-1 h-1 rounded-full bg-white/60"></span>
+<span class="w-1 h-1 rounded-full bg-white/40"></span>
+</div>
+</div>
+<div class="aspect-square flex flex-col items-center justify-center">
+<span class="text-lg font-semibold mb-1">9</span>
+<div class="flex gap-0.5 justify-center">
+<span class="w-1 h-1 rounded-full bg-secondary-container"></span>
+</div>
+</div>
+<div class="aspect-square flex flex-col items-center justify-center">
+<span class="text-lg font-semibold mb-1">10</span>
+</div>
+<div class="aspect-square flex flex-col items-center justify-center">
+<span class="text-lg font-semibold mb-1">11</span>
+<div class="flex gap-0.5 justify-center">
+<span class="w-1 h-1 rounded-full bg-primary-container"></span>
+</div>
+</div>
+<!-- Remaining weeks omitted for layout brevity, showing structural pattern -->
+<div class="col-span-7 flex justify-center mt-4">
+<div class="h-1 w-12 bg-surface-container-high rounded-full"></div>
+</div>
+</div>
+</section>
+<!-- Activities Section -->
+<section class="mb-12">
+<div class="flex items-center justify-between mb-6">
+<h2 class="text-xl font-bold">Wednesday, April 8</h2>
+<span class="text-sm font-medium text-primary bg-primary-fixed/30 px-3 py-1 rounded-full">3 Activities</span>
+</div>
+<div class="space-y-4">
+<!-- Activity Card 1 -->
+<div class="bg-surface-container-lowest p-5 rounded-lg flex items-center justify-between group hover:bg-surface-container-low transition-all">
+<div class="flex items-center gap-5">
+<div class="w-14 h-14 rounded-lg bg-primary-fixed/20 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-3xl">sports_soccer</span>
+</div>
+<div>
+<h3 class="font-bold text-lg leading-tight">Football Practice</h3>
+<div class="flex items-center gap-2 mt-1">
+<span class="text-on-surface-variant text-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">schedule</span> 45 min
+                                </span>
+<span class="text-outline-variant text-[10px]">•</span>
+<div class="flex gap-1">
+<span class="px-2 py-0.5 bg-primary/10 text-primary rounded-full text-[10px] font-bold uppercase tracking-wider">Physical</span>
+<span class="px-2 py-0.5 bg-tertiary/10 text-tertiary rounded-full text-[10px] font-bold uppercase tracking-wider">Intelligence</span>
+</div>
+</div>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<div class="bg-secondary-fixed text-on-secondary-fixed-variant px-3 py-1 rounded-full flex items-center gap-1">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">mood</span>
+<span class="text-xs font-bold">9.2</span>
+</div>
+</div>
+</div>
+<!-- Activity Card 2 -->
+<div class="bg-surface-container-lowest p-5 rounded-lg flex items-center justify-between group hover:bg-surface-container-low transition-all">
+<div class="flex items-center gap-5">
+<div class="w-14 h-14 rounded-lg bg-tertiary-container/10 flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-3xl">palette</span>
+</div>
+<div>
+<h3 class="font-bold text-lg leading-tight">Art &amp; Craft Session</h3>
+<div class="flex items-center gap-2 mt-1">
+<span class="text-on-surface-variant text-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">schedule</span> 60 min
+                                </span>
+<span class="text-outline-variant text-[10px]">•</span>
+<div class="flex gap-1">
+<span class="px-2 py-0.5 bg-primary-container/10 text-on-primary-container rounded-full text-[10px] font-bold uppercase tracking-wider">Creative</span>
+</div>
+</div>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<div class="bg-surface-container-high text-on-surface-variant px-3 py-1 rounded-full flex items-center gap-1">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">mood</span>
+<span class="text-xs font-bold">8.5</span>
+</div>
+</div>
+</div>
+<!-- Activity Card 3 -->
+<div class="bg-surface-container-lowest p-5 rounded-lg flex items-center justify-between group hover:bg-surface-container-low transition-all">
+<div class="flex items-center gap-5">
+<div class="w-14 h-14 rounded-lg bg-secondary-container/10 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-3xl">psychology</span>
+</div>
+<div>
+<h3 class="font-bold text-lg leading-tight">Bedtime Storytelling</h3>
+<div class="flex items-center gap-2 mt-1">
+<span class="text-on-surface-variant text-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">schedule</span> 20 min
+                                </span>
+<span class="text-outline-variant text-[10px]">•</span>
+<div class="flex gap-1">
+<span class="px-2 py-0.5 bg-secondary-container/10 text-on-secondary-container rounded-full text-[10px] font-bold uppercase tracking-wider">Emotional</span>
+<span class="px-2 py-0.5 bg-outline-variant/10 text-outline rounded-full text-[10px] font-bold uppercase tracking-wider">Values</span>
+</div>
+</div>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<div class="bg-secondary-fixed text-on-secondary-fixed-variant px-3 py-1 rounded-full flex items-center gap-1">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">mood</span>
+<span class="text-xs font-bold">9.8</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Floating Action Button -->
+<button class="fixed bottom-28 right-6 w-16 h-16 rounded-full bg-[#1ABC9C] text-white shadow-[0_12px_24px_rgba(26,188,156,0.3)] flex items-center justify-center z-50 hover:scale-105 active:scale-95 transition-all">
+<span class="material-symbols-outlined text-3xl">add</span>
+</button>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-6 pt-3 bg-white/80 dark:bg-zinc-900/80 backdrop-blur-md rounded-t-[24px] z-50 shadow-[0_-8px_32px_rgba(0,0,0,0.06)]">
+<a class="flex flex-col items-center justify-center text-zinc-500 dark:text-zinc-400 py-2 px-5 hover:text-[#1ABC9C] transition-all active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="font-['Inter'] text-[11px] font-medium uppercase tracking-wider mt-1">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-[#1ABC9C] dark:bg-[#006B58] text-white rounded-[20px] py-2 px-5 active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">calendar_today</span>
+<span class="font-['Inter'] text-[11px] font-medium uppercase tracking-wider mt-1">Calendar</span>
+</a>
+<a class="flex flex-col items-center justify-center text-zinc-500 dark:text-zinc-400 py-2 px-5 hover:text-[#1ABC9C] transition-all active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined">analytics</span>
+<span class="font-['Inter'] text-[11px] font-medium uppercase tracking-wider mt-1">Insights</span>
+</a>
+<a class="flex flex-col items-center justify-center text-zinc-500 dark:text-zinc-400 py-2 px-5 hover:text-[#1ABC9C] transition-all active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="font-['Inter'] text-[11px] font-medium uppercase tracking-wider mt-1">Profile</span>
+</a>
+</nav>
+</body></html>

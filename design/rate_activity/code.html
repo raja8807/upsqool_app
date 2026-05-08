@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>upsQool - Rate Activity</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "inverse-surface": "#2e3132",
+                    "on-tertiary-fixed-variant": "#00504a",
+                    "secondary-container": "#fc8a40",
+                    "on-tertiary-fixed": "#00201d",
+                    "on-error": "#ffffff",
+                    "surface-container-lowest": "#ffffff",
+                    "on-secondary": "#ffffff",
+                    "on-surface-variant": "#3c4a45",
+                    "primary-fixed-dim": "#4eddbb",
+                    "on-secondary-container": "#672c00",
+                    "primary-container": "#1abc9c",
+                    "surface-variant": "#e1e3e4",
+                    "on-primary-fixed": "#002019",
+                    "secondary-fixed-dim": "#ffb68d",
+                    "tertiary-fixed-dim": "#71d7cd",
+                    "surface-dim": "#d9dadb",
+                    "surface-container": "#edeeef",
+                    "on-tertiary": "#ffffff",
+                    "on-primary-fixed-variant": "#005141",
+                    "on-primary-container": "#004538",
+                    "outline-variant": "#bbcac3",
+                    "on-surface": "#191c1d",
+                    "tertiary-fixed": "#8ef4e9",
+                    "on-tertiary-container": "#00443f",
+                    "background": "#f8f9fa",
+                    "surface": "#f8f9fa",
+                    "error-container": "#ffdad6",
+                    "surface-container-highest": "#e1e3e4",
+                    "surface-container-high": "#e7e8e9",
+                    "on-error-container": "#93000a",
+                    "tertiary-container": "#4eb7ad",
+                    "surface-bright": "#f8f9fa",
+                    "on-background": "#191c1d",
+                    "inverse-on-surface": "#f0f1f2",
+                    "primary": "#006b58",
+                    "on-secondary-fixed-variant": "#763300",
+                    "surface-tint": "#006b58",
+                    "secondary": "#9b4500",
+                    "primary-fixed": "#6ff9d6",
+                    "on-primary": "#ffffff",
+                    "on-secondary-fixed": "#331200",
+                    "tertiary": "#006a63",
+                    "surface-container-low": "#f3f4f5",
+                    "outline": "#6c7a75",
+                    "inverse-primary": "#4eddbb",
+                    "error": "#ba1a1a",
+                    "secondary-fixed": "#ffdbc9"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Plus Jakarta Sans"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            line-height: 1;
+        }
+        .tonal-shift-surface-container-low {
+            background-color: #f3f4f5;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background font-body text-on-surface min-h-screen">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md shadow-sm dark:shadow-none flex justify-between items-center px-6 py-4 w-full">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full overflow-hidden bg-surface-container-high">
+<img alt="Child profile" class="w-full h-full object-cover" data-alt="Close-up portrait of a happy young child with soft lighting and a warm, blurred background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBk94f2sTn60Gd6c65UdSlzCgo5RIgMdT-auva1zfw9CrlGgPDlgemzIVrHyOoCCdYEY4AWBmpnfi1dIRnsiduBmiO4G5giRvrySQa7HzXwXcMhKWXg7lgPLvSy1wIGa5-kqu06nGwGO6OzhaDELn6D50Zi2igxgZrhL1ask3MX2EfrZkP72DkG40zufIQMKvAMPRxtb3AlmK4vZVdsd3xuQiq9K8thnPPcFATkYh1BW-g7f7y-lPYEFWc6z6km1UerkxnOgYf4t5Y"/>
+</div>
+<span class="text-2xl font-bold tracking-tight text-teal-700 dark:text-teal-300 font-headline">upsQool</span>
+</div>
+<button class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-slate-100/50 transition-colors active:scale-95">
+<span class="material-symbols-outlined text-teal-600" data-icon="settings">settings</span>
+</button>
+</header>
+<!-- Main Content (Background Summary) -->
+<main class="pt-24 pb-32 px-6 max-w-lg mx-auto">
+<div class="mb-8">
+<span class="text-primary font-semibold tracking-wider text-sm font-headline">ACTIVITY COMPLETE</span>
+<h1 class="text-4xl font-extrabold font-headline text-on-surface mt-2 leading-tight">Sensory Play:<br/>Water World</h1>
+<p class="text-on-surface-variant mt-4 leading-relaxed">Today we explored textures and temperatures using colorful water beads and floating wooden animals.</p>
+</div>
+<div class="grid grid-cols-2 gap-4 mb-8">
+<div class="bg-surface-container-lowest p-6 rounded-lg border-none">
+<span class="text-on-surface-variant text-xs font-bold uppercase tracking-widest">DURATION</span>
+<p class="text-2xl font-headline font-bold text-primary mt-1">45 min</p>
+</div>
+<div class="bg-surface-container-lowest p-6 rounded-lg border-none">
+<span class="text-on-surface-variant text-xs font-bold uppercase tracking-widest">FOCUS</span>
+<p class="text-2xl font-headline font-bold text-primary mt-1">Motor</p>
+</div>
+</div>
+<div class="bg-primary/5 p-8 rounded-lg mb-12 relative overflow-hidden">
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary-container/20 rounded-full -mr-16 -mt-16 blur-3xl"></div>
+<h3 class="text-lg font-bold font-headline mb-4">Milestone Progress</h3>
+<div class="space-y-6">
+<div class="flex items-center gap-4">
+<div class="w-3 h-3 rounded-full bg-secondary-container"></div>
+<div class="flex-1">
+<p class="text-sm font-medium">Fine Motor Skills</p>
+<div class="w-full bg-surface-container-high h-2 rounded-full mt-2">
+<div class="bg-primary h-2 rounded-full" style="width: 75%"></div>
+</div>
+</div>
+<span class="text-xs font-bold text-on-surface-variant">+12%</span>
+</div>
+</div>
+</div>
+</main>
+<!-- Bottom Sheet Backdrop -->
+<div class="fixed inset-0 bg-on-surface/40 backdrop-blur-sm z-[60]"></div>
+<!-- Bottom Sheet Content -->
+<div class="fixed bottom-0 left-0 right-0 z-[70] max-w-lg mx-auto bg-white rounded-t-[24px] shadow-[0_-8px_40px_rgba(0,0,0,0.12)] p-8">
+<!-- Handle -->
+<div class="w-12 h-1.5 bg-surface-container-highest rounded-full mx-auto mb-8"></div>
+<h2 class="text-2xl font-bold font-headline text-on-surface mb-8 text-center">How was this activity?</h2>
+<div class="space-y-10">
+<!-- Performance Section -->
+<section>
+<h3 class="text-sm font-bold text-on-surface-variant uppercase tracking-widest mb-4 text-center">Performance</h3>
+<div class="flex justify-center gap-2">
+<span class="material-symbols-outlined text-4xl text-secondary-container cursor-pointer" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-4xl text-secondary-container cursor-pointer" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-4xl text-secondary-container cursor-pointer" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-4xl text-secondary-container cursor-pointer" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-4xl text-outline-variant cursor-pointer" data-icon="star">star</span>
+</div>
+</section>
+<!-- Enjoyment Section -->
+<section>
+<h3 class="text-sm font-bold text-on-surface-variant uppercase tracking-widest mb-4 text-center">Enjoyment</h3>
+<div class="flex justify-between items-center px-4">
+<button class="text-3xl opacity-40 hover:opacity-100 transition-opacity transform hover:scale-125 duration-200">😡</button>
+<button class="text-3xl opacity-40 hover:opacity-100 transition-opacity transform hover:scale-125 duration-200">😐</button>
+<button class="text-3xl opacity-40 hover:opacity-100 transition-opacity transform hover:scale-125 duration-200">🙂</button>
+<button class="text-3xl p-3 bg-secondary-container/10 rounded-full ring-4 ring-secondary-container/20 transform scale-125">😄</button>
+<button class="text-3xl opacity-40 hover:opacity-100 transition-opacity transform hover:scale-125 duration-200">🤩</button>
+</div>
+</section>
+<!-- Optional Note -->
+<section>
+<div class="relative">
+<textarea class="w-full bg-surface-container-low border-none rounded-lg p-4 text-on-surface focus:ring-2 focus:ring-primary/20 min-h-[100px] font-body resize-none" placeholder="Add note..."></textarea>
+</div>
+</section>
+<!-- CTA -->
+<div class="pt-4 pb-2">
+<button class="w-full bg-secondary-container text-white font-bold py-5 rounded-lg shadow-lg hover:brightness-105 active:scale-[0.98] transition-all flex items-center justify-center gap-3">
+                    Save Rating
+                    <span class="material-symbols-outlined" data-icon="check_circle">check_circle</span>
+</button>
+</div>
+</div>
+</div>
+<!-- BottomNavBar (Hidden for Modal focus as per instructions for Task-Focused Screens) -->
+<!-- The prompt mentions this is a bottom sheet on top of activity summary, suggesting a modal state which suppresses global navigation. -->
+</body></html>
